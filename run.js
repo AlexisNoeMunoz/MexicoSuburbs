@@ -41,7 +41,7 @@ const run = (data) => {
 				name: datum.d_asenta,
 				cp,
 				city_id: currentCities[datum.D_mnpio].id,
-				type_id: types[datum.d_tipo_asenta].id,
+				suburb_type_id: types[datum.d_tipo_asenta].id,
 			})
 		})
 
