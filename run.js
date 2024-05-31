@@ -32,14 +32,14 @@ const run = (data) => {
 					state_id: states[datum.d_estado].id,
 				}
 
-			let cp = datum.d_codigo
-			while(cp.charAt(0) === '0'){
-				cp = cp.substring(1);
+			let postal_code = datum.d_codigo
+			while(postal_code.charAt(0) === '0'){
+				postal_code = postal_code.substring(1);
 			}
 			suburbs.push({
 				id: suburbs.length + 1,
 				name: datum.d_asenta,
-				cp,
+				postal_code,
 				city_id: currentCities[datum.D_mnpio].id,
 				suburb_type_id: types[datum.d_tipo_asenta].id,
 			})
